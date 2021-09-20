@@ -4,4 +4,4 @@
 * Assignment 1 consist of using processes in C
 
 
-*** Erick Baca
+### Erick Baca
