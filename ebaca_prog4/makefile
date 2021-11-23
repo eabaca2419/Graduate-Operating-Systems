@@ -1,7 +1,7 @@
 CC = gcc
 Lib = 
 file = bankClient
-Exe = ebaca
+Exe = bankClient
 $(Exe):	$(file).o
 	$(CC) $(file).o -o $(Exe) $(Lib)
 $(file).o:	$(file).c 
