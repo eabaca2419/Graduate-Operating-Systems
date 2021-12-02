@@ -25,9 +25,12 @@ int main(int argc, char *argv[]){
         }
         else if(child[i] == 0)  //if the child is 0, then execute program 
             execlp(commands[i][0], commands[i][0], commands[i][1], commands[i][2]);
-        else 
-            waitpid(child[i] ,NULL, 0); //as the parent wait for the childs to end
+
     }
+    waitpid(child[0] ,NULL, 0); //as the parent wait for the childs to end
+    waitpid(child[1] ,NULL, 0); //as the parent wait for the childs to end
+    waitpid(child[2] ,NULL, 0); //as the parent wait for the childs to end
+    
     /*When child 3 finishes, it will start a process echo and it will say good 
     bye without waiting for the previous process */
 
